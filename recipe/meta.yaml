@@ -1,5 +1,5 @@
 {% set name = "reverse-geocode" %}
-{% set version = "1.4.1" %}
+{% set version = "1.6.3" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/reverse_geocode-{{ version }}.tar.gz"
-  sha256: b0ca8fdd529c999db4d344c2e4075f5dac7db7d3cc8aeb82709091ff340c11a6
+  sha256: a697243d36b81c363030959bf0acdad470efd0b67a7d0f3dce219f697f0bd070
   patches:
     - 0001_python_int_too_large_for_c_long.patch  # [win]
 
